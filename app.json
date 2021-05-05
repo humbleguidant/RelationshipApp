@@ -1,0 +1,26 @@
+{
+  "expo": {
+    "name": "Good For 2",
+    "slug": "RelationshipProject",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/goodfor2.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#5BC0DE"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.anickerson.RelationshipProject"
+    }
+  }
+}

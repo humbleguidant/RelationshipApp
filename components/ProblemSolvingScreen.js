@@ -1,3 +1,16 @@
+/*
+Author: Aubrey Nickerson
+Date: August 10th, 2020
+Program: ProblemSolvingScreen.js
+Project: Relationship App
+
+This is the problem solving screen. Problem solving
+gives information on how problem solve in a relationship,
+fight fair, discussing the problem, generate solutions, and so
+on. 
+*/
+
+// Import libraries
 import React, { Component } from 'react';
 import { StyleSheet, View, Image, ScrollView } from 'react-native';
 import { Button, Text } from 'galio-framework';
@@ -5,6 +18,8 @@ import { Button, Text } from 'galio-framework';
 
 export default class ProblemSolvingScreen extends Component{
     render(){
+        
+        // Display content
         return (
             <ScrollView>
                 <View style={styles.container}>

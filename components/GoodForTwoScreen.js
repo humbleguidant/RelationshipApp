@@ -1,9 +1,26 @@
+/*
+Author: Aubrey Nickerson
+Date: August 5th, 2020
+Program: GoodForTwoScreen.js
+Project: Relationship App
+
+
+This is the good for 2 screen.
+The screen provides a deck of cards 
+for the user to swipe left or right.
+Each card gives advice on how to make a
+rekationship strong together. 
+*/
+
+// Import libraries
 import React, { Component } from 'react';
 import { StyleSheet, Image } from 'react-native';
 import { Button } from 'galio-framework';
 import { Container, View, DeckSwiper, Card, CardItem, Text, Body } from "native-base";
 import { ScrollView } from 'react-native-gesture-handler';
 
+
+// Instantiate cards
 const cards = [
     {
         text: '"Kindness is the life’s blood, the elixir of marriage. Kindness makes the difference between passion and caring." (Randolph Ray)',
@@ -61,6 +78,8 @@ const cards = [
 export default class GoodForTwoScreen extends Component{
 
     render(){
+        
+        // Display content
         return(
             <Container style={{backgroundColor: "#5BC0DE"}}>
                 <View style={{marginTop: 75}}>

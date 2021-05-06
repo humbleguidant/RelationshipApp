@@ -1,9 +1,23 @@
+/*
+Author: Aubrey Nickerson
+Date: August 3rd, 2020
+Program: ExpectationsScreen.js
+Project: Relationship App
+
+The expectations screen includes a stack
+of cards where the user can swipe left or right.
+Each card gives tips to the user on staying positive
+and how to stay in a healthy relationship.
+*/
+
+// Import all screens and libraries
 import React, { Component } from 'react';
 import { StyleSheet, Image } from 'react-native';
 import { Button } from 'galio-framework';
 import { Container, View, DeckSwiper, Card, CardItem, Text, Body } from "native-base";
 import { ScrollView } from 'react-native-gesture-handler';
 
+// Instantiate deck of cards
 const cards = [
     {
         text: 'Have realistic expectations for your partner.\n                       (Swipe left or right)',
@@ -45,6 +59,7 @@ const cards = [
 export default class ExpectationsScreen extends Component{
 
     render(){
+        // display content
         return(
             <Container style={{backgroundColor: "#5BC0DE"}}>
                 <View style={{marginTop: 75}}>

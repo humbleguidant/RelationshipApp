@@ -1,3 +1,14 @@
+/*
+Author: Aubrey Nickerson
+Date: August 2nd, 2020
+Program: ConflictScreen.js
+Project: Relationship App
+
+This is the conflict screen. It gives advice on
+how to resolve conflicts in a relationship. 
+*/
+
+// Import libraries
 import React, { Component } from 'react';
 import { StyleSheet, View, ScrollView } from 'react-native';
 import { Button } from 'galio-framework';
@@ -5,6 +16,7 @@ import { Card, Text } from 'react-native-elements';
 
 export default class ConflictScreen extends Component{
     render(){
+        // display content
         return (
             <ScrollView>
                 <View style={styles.container}>

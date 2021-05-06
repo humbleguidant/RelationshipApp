@@ -1,8 +1,22 @@
+/*
+Author: Aubrey Nickerson
+Date: August 5th, 2020
+Program: ListenScreen.js
+Project: Relationship App
+
+This is the listen screen. The listen screen
+gives tips on how to listen, paraphrase,
+time, understand, seek help, and accept differences
+in a relationship. 
+*/
+
+// Import libraries
 import React, { Component } from 'react';
 import { StyleSheet, View} from 'react-native';
 import { Button } from 'galio-framework';
 import { Container, Content, Icon, Accordion, Text } from "native-base";
 
+// Add key-pair list of definitions
 const dataArray = [
     { title: "Listening", content: "A first step to understanding our partner is to listen actively. Active listening involves several steps, including listening without interruption or judgment, and by focusing on the speaker rather than your intended response."},
     { title: "Paraphrasing", content: "State in your own words your understanding of what has just been said. Ask questions, and ask for additional information. Confirm if what you think you heard is what the speaker intended to say."},
@@ -13,6 +27,8 @@ const dataArray = [
 ];
 export default class ListenScreen extends Component{
     _renderHeader(item, expanded){
+        
+        // display content
         return(
             <View style={styles.headerContainer}>
                 <Text style={styles.textContainer}>{" "}{item.title}</Text>

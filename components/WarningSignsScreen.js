@@ -1,8 +1,22 @@
+/*
+Author: Aubrey Nickerson
+Date: August 12th, 2020
+Program: WarningSignsScreen.js
+Project: Relationship App
+
+This is the warning signs screen. This page gives more
+details on the four warning signs in a relationship which 
+are criticism, contempt, defensiveness, and stonewalling. 
+*/
+
+
+// Import libraries
 import React, { Component } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { Button, Block, Accordion } from 'galio-framework';
 import { ScrollView } from 'react-native-gesture-handler';
 
+// Add key-pair list of definitions
 const data = [
     { title: "Warning Signs", content: "John Gottman suggests that \"certain kinds of negativity, if allowed to run rampant, are so lethal to a relationship\" that he calls them the Four Horsemen of the Apocalypse:",
       icon: {
@@ -20,6 +34,8 @@ const data = [
 export default class WarningSignsScreen extends Component{
 
     render(){
+        
+        // display content
         return (
                 <View style={styles.container}>
                     <ScrollView>

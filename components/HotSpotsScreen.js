@@ -1,3 +1,17 @@
+/*
+Author: Aubrey Nickerson
+Date: August 6th, 2020
+Program: HotSpotsScreen.js
+Project: Relationship App
+
+This is the hot spots screen. The hot spots screen
+explains issues that can happen in a relationship such
+as coping with infidelity, domestic dilemmas, money management,
+and so on. 
+*/
+
+
+// Import libraries
 import React, { Component } from 'react';
 import { StyleSheet, Image } from 'react-native';
 import { Button, } from 'galio-framework';
@@ -6,6 +20,8 @@ import { Container, Header, Content, Card, CardItem, Thumbnail, Text, Left, Body
 
 export default class HotSpotsScreen extends Component{
     render(){
+        
+        // Display content
         return (
             <Container>
                 <Content style={{backgroundColor: "#5BC0DE"}}>
